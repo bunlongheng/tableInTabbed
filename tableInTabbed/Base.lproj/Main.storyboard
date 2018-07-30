@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,18 +40,33 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-XT-cxV">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-XT-cxV">
                                                     <rect key="frame" x="15" y="11" width="100" height="98"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="bpV-XT-cxV" secondAttribute="height" multiplier="50:49" id="dUP-3Y-r4G"/>
+                                                        <constraint firstAttribute="width" secondItem="bpV-XT-cxV" secondAttribute="height" multiplier="50:49" id="zKt-17-kD1"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H76-Ye-dDO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H76-Ye-dDO">
                                                     <rect key="frame" x="151" y="50" width="38" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="H76-Ye-dDO" secondAttribute="height" multiplier="38:21" id="aEz-g9-hTh"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="H76-Ye-dDO" firstAttribute="leading" secondItem="bpV-XT-cxV" secondAttribute="trailing" constant="36" id="HCQ-4f-c4b"/>
+                                                <constraint firstItem="bpV-XT-cxV" firstAttribute="leading" secondItem="0Ej-ki-wpU" secondAttribute="leadingMargin" id="HRS-oo-xL3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="H76-Ye-dDO" secondAttribute="trailing" constant="171" id="UZw-Bn-vmy"/>
+                                                <constraint firstItem="H76-Ye-dDO" firstAttribute="leading" secondItem="bpV-XT-cxV" secondAttribute="trailing" constant="36" id="Y7F-bR-wpM"/>
+                                                <constraint firstItem="H76-Ye-dDO" firstAttribute="top" secondItem="0Ej-ki-wpU" secondAttribute="topMargin" constant="39" id="eSz-Mw-OFa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="H76-Ye-dDO" secondAttribute="bottom" constant="38" id="ia0-h0-UB8"/>
+                                                <constraint firstItem="bpV-XT-cxV" firstAttribute="bottom" secondItem="0Ej-ki-wpU" secondAttribute="bottomMargin" id="qmN-AL-XGl"/>
+                                                <constraint firstItem="bpV-XT-cxV" firstAttribute="top" secondItem="0Ej-ki-wpU" secondAttribute="topMargin" id="rtv-3w-fEM"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="profileImg" destination="bpV-XT-cxV" id="QxI-w1-rWR"/>
