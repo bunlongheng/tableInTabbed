@@ -19,8 +19,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
-//        cell.myImage.image = UIImage(named: animals[indexPath.row] + ".jpg")
-//        cell.myLabel.text = animals[indexPath.row]
+        cell.profileImg.image = UIImage(named: animals[indexPath.row] + ".jpg")
+        cell.profileName.text = animals[indexPath.row]
         
         print(animals[indexPath.row])
         
