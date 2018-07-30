@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let animals = ["panda", "dog", "lion"]
+    let animals = ["john", "jane", "andrew"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (animals.count)
