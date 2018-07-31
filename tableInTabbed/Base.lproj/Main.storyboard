@@ -111,6 +111,21 @@
             </objects>
             <point key="canvasLocation" x="-739.13043478260875" y="883.69565217391312"/>
         </scene>
+        <!--Profile Detail View Controller-->
+        <scene sceneID="2o1-ua-Rln">
+            <objects>
+                <viewController id="RHg-RY-Hm2" customClass="ProfileDetailViewController" customModule="tableInTabbed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JiD-UU-txP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xkb-Iv-ABC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyj-7q-Iee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-739" y="1653"/>
+        </scene>
         <!--Security-->
         <scene sceneID="p7H-9P-tPK">
             <objects>

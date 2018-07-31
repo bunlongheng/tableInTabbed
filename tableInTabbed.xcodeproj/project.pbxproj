@@ -13,6 +13,7 @@
 		17813B76210F98E60012C01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17813B75210F98E60012C01D /* Assets.xcassets */; };
 		17813B79210F98E60012C01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17813B77210F98E60012C01D /* LaunchScreen.storyboard */; };
 		17C73958210FA34400F41526 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73957210FA34400F41526 /* ViewControllerTableViewCell.swift */; };
+		17C739BC2110B17600F41526 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C739BB2110B17600F41526 /* ProfileDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		17813B78210F98E60012C01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17813B7A210F98E60012C01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C73957210FA34400F41526 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		17C739BB2110B17600F41526 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				17813B6C210F98E50012C01D /* AppDelegate.swift */,
 				17813B6E210F98E50012C01D /* FirstViewController.swift */,
+				17C739BB2110B17600F41526 /* ProfileDetailViewController.swift */,
 				17813B72210F98E60012C01D /* Main.storyboard */,
 				17813B75210F98E60012C01D /* Assets.xcassets */,
 				17813B77210F98E60012C01D /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17813B6D210F98E50012C01D /* AppDelegate.swift in Sources */,
+				17C739BC2110B17600F41526 /* ProfileDetailViewController.swift in Sources */,
 				17813B6F210F98E50012C01D /* FirstViewController.swift in Sources */,
 				17C73958210FA34400F41526 /* ViewControllerTableViewCell.swift in Sources */,
 			);
