@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ProfileViewController
 //  tableInTabbed
 //
 //  Created by Bunlong Heng on 7/30/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let profiles = ["john", "jane", "andrew"]
     let devicesInProfile = ["3", "5", "10"]
