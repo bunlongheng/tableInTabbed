@@ -10,19 +10,22 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let animals = ["john", "jane", "andrew"]
+    let profiles = ["john", "jane", "andrew"]
+    let devicesInProfile = ["3", "5", "10"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (animals.count)
+        return (profiles.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
-        cell.profileImg.image = UIImage(named: animals[indexPath.row] + ".jpg")
-        cell.profileName.text = animals[indexPath.row]
         
-        print(animals[indexPath.row])
+        cell.profileImg.image = UIImage(named: profiles[indexPath.row] + ".jpg")
+        cell.profileName.text = profiles[indexPath.row]
+        cell.devicesInProfile.text = devicesInProfile[indexPath.row]
+        
+        print(profiles[indexPath.row])
         
         return cell
         
